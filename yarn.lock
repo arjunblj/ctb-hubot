@@ -158,10 +158,6 @@ cline@^0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/cline/-/cline-0.8.2.tgz#e911e741a0ad2e24d29e6fab2cf89fa322d59c76"
 
-coffee-script@^1.10.0:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.11.1.tgz#bf1c47ad64443a0d95d12df2b147cc0a4daad6e9"
-
 coffee-script@1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.6.3.tgz#6355d32cf1b04cdff6b484e5e711782b2f0c39be"
@@ -353,6 +349,10 @@ destroy@~1.0.4:
 destroy@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.3.tgz#b433b4724e71fd8551d9885174851c5fc377e2c9"
+
+double-ended-queue@^2.1.0-0:
+  version "2.1.0-0"
+  resolved "https://registry.yarnpkg.com/double-ended-queue/-/double-ended-queue-2.1.0-0.tgz#103d3527fd31528f40188130c841efdd78264e5c"
 
 ecc-jsbn@~0.1.1:
   version "0.1.1"
@@ -591,18 +591,18 @@ hubot-scripts@^2.17.2:
   dependencies:
     redis "0.8.4"
 
+hubot-sentimental:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/hubot-sentimental/-/hubot-sentimental-1.0.8.tgz#66c024eb366957e862c104f1551a3d25cd599a56"
+  dependencies:
+    redis ">= 0.10.0"
+    Sentimental "0.0.4"
+
 hubot-shipit@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/hubot-shipit/-/hubot-shipit-0.2.0.tgz#1957c7757cccce64a7c51f7eed4b4bd54e4a52ae"
 
-hubot-slack-reaction:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/hubot-slack-reaction/-/hubot-slack-reaction-0.0.4.tgz#f07e8ee4ab8f199c0485839152697e1eb934e5f4"
-  dependencies:
-    coffee-script "^1.10.0"
-    hubot-slack "^4.2.1"
-
-hubot-slack@^4.2.1, hubot-slack@^4.2.2:
+hubot-slack@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/hubot-slack/-/hubot-slack-4.2.2.tgz#e8507688deb760d7f19357af26c09fe78eb79584"
   dependencies:
@@ -888,6 +888,22 @@ readable-stream@~1.1.8, readable-stream@~1.1.9:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
+redis-commands@^1.2.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/redis-commands/-/redis-commands-1.3.0.tgz#4307d8094aee1315829ab6729b37b99f62365d63"
+
+redis-parser@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/redis-parser/-/redis-parser-2.2.0.tgz#4a01e162af66bd6eae7e6c291f9e25cb430351fa"
+
+"redis@>= 0.10.0":
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/redis/-/redis-2.6.3.tgz#84305b92553c6a1f09c7c47c30b11ace7dbb7ad4"
+  dependencies:
+    double-ended-queue "^2.1.0-0"
+    redis-commands "^1.2.0"
+    redis-parser "^2.0.0"
+
 redis@0.8.4:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/redis/-/redis-0.8.4.tgz#14609f26414e211c31e3cd07dc79b04bf9ff1980"
@@ -973,6 +989,10 @@ send@0.13.2:
     on-finished "~2.3.0"
     range-parser "~1.0.3"
     statuses "~1.2.1"
+
+Sentimental@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/Sentimental/-/Sentimental-0.0.4.tgz#02922349ce87af53d1f2763f8729cd81f3465430"
 
 serve-favicon@~2.3.0:
   version "2.3.2"
